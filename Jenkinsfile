@@ -20,14 +20,14 @@ pipeline{
                 submitterParameter "Whoapproved"
                 parameters{
                     string(
-                        name : "USR_NAME"
-                        defaultValue : "Prathi"
-                        description : "Enter your name"
+                        name : 'USR_NAME'
+                        defaultValue : 'Prathi'
+                        description : 'Enter your name'
                     )
                     string(
-                        name : "CHG_Tocket"
-                        defaultValue : "CHG123"
-                        description : "CR number"
+                        name : 'CHG_Tocket'
+                        defaultValue : 'CHG123'
+                        description : 'CR number'
                     )
                     booleanParam(
                         name : "SRE_Approved"
