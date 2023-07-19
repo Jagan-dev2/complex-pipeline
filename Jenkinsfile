@@ -3,7 +3,9 @@ pipeline{
     stages{
         stage ('Build')
         {
+            steps{
             echo "Buils stage"
+            }
         }
         stage('Deploy to Prod')
         {
