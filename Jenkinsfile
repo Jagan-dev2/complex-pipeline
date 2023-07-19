@@ -20,33 +20,33 @@ pipeline{
                 submitterParameter "Whoapproved"
                 parameters{
                     string(
-                        name : 'USR_NAME'
-                        defaultValue : 'Prathi'
+                        name : 'USR_NAME',
+                        defaultValue : 'Prathi',
                         description : 'Enter your name'
                     )
                     string(
-                        name : 'CHG_Tocket'
-                        defaultValue : 'CHG123'
+                        name : 'CHG_Tocket',
+                        defaultValue : 'CHG123',
                         description : 'CR number'
                     )
                     booleanParam(
-                        name : "SRE_Approved"
-                        defaultValue : true
+                        name : "SRE_Approved",
+                        defaultValue : true,
                         description : "Is approval taken from concern person"
                     )
                     choice(
-                        name : "Release"
-                        choices: "Release\nhotfix"
+                        name : "Release",
+                        choices: "Release\nhotfix",
                         description : "Type of release,main or hotfix?"
                     )
                     text(
-                        name : "Notes"
-                        defaultValue : "Release to prodcution"
+                        name : "Notes",
+                        defaultValue : "Release to prodcution",
                         description : "Release notes"
                     )
                     credentials(
-                        name : "my creds"
-                        description: "MyCredentials"
+                        name : "my creds",
+                        description: "MyCredentials",
                         required : true
                     )
                 }
